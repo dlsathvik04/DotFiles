@@ -1,0 +1,121 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+env:
+  TERM: xterm-256color
+
+# Font configuration (changes require restart)
+font:
+  # Normal (roman) font face
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: "Regular"
+
+  # Bold font face
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: "Bold"
+
+  # Italic font face
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: "Italic"
+
+  # Point size
+  # size: 12.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the linespacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the `y` offset to move the glyph
+  # up, and decrease it to move the glyph down. Increase the `x` offset to move
+  # the glyph to the right, and decrease it to move the glyph to the left.
+  glyph_offset:
+    x: 0
+    y: 0
+
+# Window dimensions (changes require restart)
+window:
+  # Window dimensions in character columns and lines
+  dimensions:
+    columns: 120
+    lines: 36
+
+  # Window position in pixels (x, y)
+  position:
+    x: 0
+    y: 0
+
+  # Window padding (incremented by dpi factor)
+  padding:
+    x: 1
+    y: 1
+
+  # Spread out additional space when fewer columns are specified
+  dynamic_padding: false
+
+  # Fullscreen mode
+  fullscreen: false
+
+  # Window startup mode
+  startup_mode: Windowed
+
+  # Background opacity
+  opacity: 1.0
+
+# Visual Bell configuration
+visual_bell:
+  # Visual bell can be enabled/disabled
+  enabled: false
+
+  # Animation speed for visual bell
+  animation:
+    duration: 0
+    color: "white"
+
+# Alacritty Configuration
+# Documentation: https://github.com/alacritty/alacritty
+
+colors:
+  # Default colors
+  primary:
+    background: "#011628" # bg
+    foreground: "#CBE0F0" # fg
+
+  # Normal colors
+  normal:
+    black: "#011423" # bg_dark
+    red: "#FF3333" # (No corresponding color in the scheme)
+    green: "#99C794" # (No corresponding color in the scheme)
+    yellow: "#FAC863" # (No corresponding color in the scheme)
+    blue: "#0A64AC" # bg_search
+    magenta: "#C594C5" # (No corresponding color in the scheme)
+    cyan: "#5FB3B3" # (No corresponding color in the scheme)
+    white: "#CBE0F0" # fg
+
+  # Bright colors
+  bright:
+    black: "#143652" # bg_highlight
+    red: "#F99157" # (No corresponding color in the scheme)
+    green: "#99C794" # (No corresponding color in the scheme)
+    yellow: "#FAC863" # (No corresponding color in the scheme)
+    blue: "#0A64AC" # bg_search
+    magenta: "#C594C5" # (No corresponding color in the scheme)
+    cyan: "#5FB3B3" # (No corresponding color in the scheme)
+    white: "#B4D0E9" # fg_dark
+
+  # Additional colors
+  cursor:
+    text: "#011628" # bg
+    cursor: "#CBE0F0" # fg
+
+  selection:
+    text: "#011628" # bg
+    background: "#275378" # bg_visual
+
+  # Colored text rendering
+  indexed_colors:
+    - { index: 16, color: "#011423" } # bg_dark
+    - { index: 17, color: "#547998" } # border
