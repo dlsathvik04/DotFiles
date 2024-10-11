@@ -5,9 +5,8 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 25,
+    "height": 28,
     "modules-left": [
-        
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -15,6 +14,7 @@
         // "hyprland/window"
     ],
     "modules-right": [
+        "group/minimized",
         "network",
         "bluetooth",
         "custom/power_profile",
@@ -22,8 +22,7 @@
         // "temperature",
         "backlight",
         "pulseaudio",
-        "pulseaudio#microphone",
-        "tray"
+        "pulseaudio#microphone"
     ],
     // "include": [
     //     "~/.config/waybar/conf/mesu.jsonc",
@@ -46,15 +45,15 @@
             "7": []
         }
     },
-    "tray": {
-        "icons": {
-            "discord": "D",
-            "nm-applet" : " ",
-            "NetworkManager" : " "
-        },
-        "icon-size": 18,
-        "spacing": 10
-    },
+    // "tray": {
+    //     "icons": {
+    //         "discord": "D",
+    //         "nm-applet" : " ",
+    //         "NetworkManager" : " "
+    //     },
+    //     "icon-size": 18,
+    //     "spacing": 10
+    // },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
@@ -89,12 +88,11 @@
             "󰂁",
             "󰂂",
             "󰁹"
-        ], 
+        ],
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "~/.config/waybar/scripts/volume --toggle",
@@ -154,8 +152,8 @@
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
     "clock": {
-        "format": "{:%Y-%m-%d %H:%M}",
-        "tooltip-format": "{ :%A, %e %B %Y}"
+        "format": "<b>󰃭 {:%Y-%m-%d  󰥔 %H:%M}</b>",
+        "tooltip-format": "<b>󰥔 {:%H:%M 󰃭 %d/%m}</b>"
     },
     "custom/power_profile": {
         //shows the current power profile and switches to next on click
@@ -165,5 +163,21 @@
         "format": "{}",
         "on-click": "~/.config/waybar/scripts/power_profile next",
         "signal": 8
+    },
+    "custom/expand": {
+        "tooltip": false,
+        "format": " "
+    },
+    "tray": {},
+    "group/minimized": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/expand",
+            "tray"
+        ],
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "minimized"
+        }
     }
 }

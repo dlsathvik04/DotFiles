@@ -156,3 +156,23 @@ tooltip {
     border-right: 0px;
     margin-left: 0px;
 }
+
+#custom-expand {
+    min-width: 25px;
+    color: #cba6f7;
+}
+
+#tray {
+    margin: 0px;
+    padding: 0px;
+}
+
+#tray * {
+    margin-left: 8px;
+}
+
+#group-minimized {
+    border-left: solid;
+    border-left-width: 0.5px;
+    color: #cba6f7;
+}
