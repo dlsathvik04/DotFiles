@@ -5,20 +5,21 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 50,
+    "height": 25,
     "modules-left": [
-        "clock",
-        "wlr/workspaces"
+        
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
+        // "hyprland/window"
     ],
     "modules-right": [
         "network",
         "bluetooth",
-        "temperature",
         "custom/power_profile",
         "battery",
+        // "temperature",
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
@@ -31,7 +32,7 @@
     "hyprland/window": {
         "format": "{}"
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
@@ -46,6 +47,11 @@
         }
     },
     "tray": {
+        "icons": {
+            "discord": "D",
+            "nm-applet" : " ",
+            "NetworkManager" : " "
+        },
         "icon-size": 18,
         "spacing": 10
     },
@@ -83,10 +89,12 @@
             "󰂁",
             "󰂂",
             "󰁹"
-        ]
+        ], 
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "~/.config/waybar/scripts/volume --toggle",
@@ -133,7 +141,8 @@
         "format-connected": " {num_connections}",
         "tooltip-format": "{device_alias}",
         "tooltip-format-connected": " {device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}"
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "blueman-manager"
     },
     "temperature": {
         "thermal-zone": 1,
@@ -145,8 +154,8 @@
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "{: %A, %e %B %Y}"
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip-format": "{ :%A, %e %B %Y}"
     },
     "custom/power_profile": {
         //shows the current power profile and switches to next on click
