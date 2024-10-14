@@ -159,31 +159,18 @@ eval "$(fzf --zsh)"
 
 
 # >>> conda initialize >>>
-
 # !! Contents within this block are managed by 'conda init' !!
-
 __conda_setup="$('/home/dlsathvik04/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-
 if [ $? -eq 0 ]; then
-
     eval "$__conda_setup"
-
 else
-
     if [ -f "/home/dlsathvik04/miniconda3/etc/profile.d/conda.sh" ]; then
-
         . "/home/dlsathvik04/miniconda3/etc/profile.d/conda.sh"
-
     else
-
         export PATH="/home/dlsathvik04/miniconda3/bin:$PATH"
-
     fi
-
 fi
-
 unset __conda_setup
-
 # <<< conda initialize <<<
 
 
@@ -197,3 +184,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/dlsathvik04/flutter/flutter/bin
+
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable

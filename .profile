@@ -32,9 +32,6 @@ export PATH=$PATH:/home/dlsathvik04/flutter/flutter/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-export ANDROID_SDK_ROOT=/home/dlsathvik04/android-sdk
-export ANDROID_HOME=/home/dlsathvik04/android-sdk
-export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
 . "$HOME/.cargo/env"
 
 
