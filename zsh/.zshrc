@@ -68,12 +68,6 @@ zinit snippet OMZP::sudo
 
 zinit snippet OMZP::archlinux
 
-zinit snippet OMZP::aws
-
-zinit snippet OMZP::kubectl
-
-zinit snippet OMZP::kubectx
-
 zinit snippet OMZP::command-not-found
 
 
@@ -191,3 +185,6 @@ export ANDROID_HOME=$HOME/android-sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
+
+export PATH=$PATH:/usr/local/texlive/2024/bin/x86_64-linux

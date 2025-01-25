@@ -1,3 +1,9 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "";
+}
+
 
 * {
     font: "JetBrainsMono Nerd Font";
@@ -17,11 +23,6 @@
     w-padding: 12px;
 }
 
-configuration {
-    modi: "drun";
-    show-icons: true;
-    display-drun: "";
-}
 
 listview {
     columns: 1;
