@@ -1,0 +1,11 @@
+{
+  
+    "import tensorflow and list GPUs": {
+        "prefix": "tfgpu",
+        "body": [
+            "import tensorflow as tf",
+            "print(tf.config.list_physical_devices('GPU'))"
+        ],
+        "description": "Code snippet for importing tensorflow and listing GPUs"
+    }
+}

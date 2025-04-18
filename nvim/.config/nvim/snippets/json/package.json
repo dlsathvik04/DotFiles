@@ -1,0 +1,23 @@
+{
+  "contributes" : {
+    "snippts" : [
+      {
+        "language" : "python",
+        "path" : "./python.json"
+      },
+      {
+        "language" : "make",
+        "path" : "./make.json"
+      },
+      {
+        "language" : "go" ,
+        "path" : "./go.json"
+      }, 
+
+      {
+        "language" : "sql", 
+        "path" : "./sql.json"
+      }
+    ]
+  }
+}

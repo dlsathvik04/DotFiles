@@ -1,0 +1,81 @@
+{
+	"Print to console": {
+		"prefix": "sout",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Create basic Express App": {
+		"prefix": "!!express",
+		"body": [
+			"// initialize dotenv for environment variable setup",
+			"require('dotenv').config()",
+			"// require the dependecies here",
+			"const express = require('express')",
+			"const authRouter = require('./controllers/AuthRouter')",
+			"// create express application",
+			"const app = express()",
+			"// configure Middleware here",
+			"app.use(express.json())",
+			"// configure root behaviour if need",
+			"app.get(\"/\", (req, res) => {",
+			"    res.send(\"This is the root of the application\")",
+			"})",
+			"// configure routers here",
+			"app.use('/auth', authRouter)",
+			"// Declare the port number",
+			"const portNumber = process.env.PORT_NUMBER || 5001",
+			"// Start listening on the given port number",
+			"const server = app.listen(process.env.PORT_NUMBER, () => {",
+			"    console.log(`listening on port portNumber`)",
+			"})",
+			"// Write the server event managers here",
+			"server.on('connection', (client) => {",
+			"    console.log(`Connection from ${client.address().address}`)",
+			"})"
+		],
+		"description": "Basic express app with dotenv support"
+	},
+	"Create redux slice": {
+		"prefix": "!!redux-slice",
+		"body": [
+			"import { createSlice, createSelector } from '@reduxjs/toolkit';",
+			"",
+			"const ${1:sliceName} = createSlice({",
+			"  name: '${2:name}',",
+			"  initialState: ${3:initialState},",
+			"  reducers: {",
+			"    // Reducers here",
+			"  },",
+			"  selectors: {",
+			"    // Selectors here",
+			"  },",
+			"});",
+			"",
+			"export const { } = ${1:sliceName}.actions;",
+			"export const { } = ${1:sliceName}.selectors;",
+			"export default ${1:sliceName}.reducer;"
+		],
+		"description": "Redux slice"
+	},
+	"Create redux store": {
+		"prefix": "!!redux-store",
+		"body": [
+			"import { combineReducers, configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';",
+			"",
+			"const reducer = combineReducers({",
+			"  // Reducers here",
+			"});",
+			"",
+			"export default function () {",
+			"  return configureStore({",
+			"    reducer",
+			"    middleware: [...getDefaultMiddleware(),]",
+			"  });",
+			"}"
+		],
+		"description": "Redux store"
+	}
+}
