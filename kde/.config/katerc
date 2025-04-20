@@ -1,0 +1,48 @@
+[General]
+Days Meta Infos=30
+Quickopen Filter Mode=0
+Quickopen List Mode=true
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Show Url Nav Bar=true
+
+[MainWindow]
+2048x1280 screen: Height=598
+2048x1280 screen: Width=1019
+
+[filetree]
+editShade=31,81,106
+listMode=false
+middleClickToClose=false
+shadingEnabled=true
+showCloseButton=false
+showFullPathOnRoots=false
+showToolbar=true
+sortRole=0
+viewShade=81,49,95
+
+[lspclient]
+AllowedServerCommandLines=
+AutoHover=true
+AutoImport=true
+BlockedServerCommandLines=/home/dlsathvik04/.local/share/nvim/mason/bin/lua-language-server
+CompletionDocumentation=true
+CompletionParens=true
+Diagnostics=true
+FormatOnSave=false
+HighlightGoto=true
+IncrementalSync=false
+InlayHints=false
+Messages=true
+ReferencesDeclaration=true
+SemanticHighlighting=true
+ServerConfiguration=
+SignatureHelp=true
+SymbolDetails=false
+SymbolExpand=true
+SymbolSort=false
+SymbolTree=true
+TypeFormatting=false

@@ -1,0 +1,98 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=
+ColorAmount=
+ColorEffect=
+ContrastAmount=
+ContrastEffect=
+Enable=
+IntensityAmount=
+IntensityEffect=
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=
+ColorAmount=
+ColorEffect=
+ContrastAmount=
+ContrastEffect=
+Enable=
+IntensityAmount=
+IntensityEffect=
+
+[Colors:Button]
+BackgroundNormal=#1a1a1a
+ForegroundInactive=#aaaaaa
+ForegroundNormal=#c8c8c8
+
+[Colors:Complementary]
+BackgroundNormal=#0f0f0f
+ForegroundNormal=#bbbbbb
+
+[Colors:Header]
+BackgroundNormal=#1c1c1c
+ForegroundNormal=#c8c8c8
+
+[Colors:Selection]
+BackgroundAlternate=#3a475f
+BackgroundNormal=#3f5bdc
+ForegroundInactive=#eeeeee
+ForegroundNormal=#ffffff
+
+[Colors:Tooltip]
+BackgroundAlternate=#0f0f0f
+BackgroundNormal=#1e1e1e
+ForegroundNormal=#dddddd
+
+[Colors:View]
+BackgroundAlternate=#181818
+BackgroundNormal=#131313
+ForegroundNormal=#c8c8c8
+
+[Colors:Window]
+BackgroundAlternate=#0f0f0f
+BackgroundNormal=#131313
+ForegroundNormal=#c8c8c8
+
+[DirSelect Dialog]
+DirSelectDialog Size=820,573
+History Items[$e]=file:$HOME/WORK/library
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[General]
+ColorSchemeHash=30ab85a85b39f7edce945d30fa59e4530f382913
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=JetBrainsMonoNL Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[KDE]
+AnimationDurationFactor=0
+LookAndFeelPackage=org.kde.breezedark.desktop
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=140
+View Style=DetailTree
+
+[WM]
+activeBackground=28,28,28
+activeBlend=28,28,28
+activeForeground=200,200,200
+inactiveBackground=28,28,28
+inactiveBlend=28,28,28
+inactiveForeground=200,200,200

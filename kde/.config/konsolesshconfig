@@ -1,0 +1,12 @@
+[Global plugin config]
+manageProfile=false
+
+[SSH Config][Arch VM]
+hostname=192.168.122.111
+identifier=Arch VM
+importedFromSshConfig=false
+port=22
+profileName=Don't Change
+sshkey=
+useSshConfig=false
+username=dlsathvik04

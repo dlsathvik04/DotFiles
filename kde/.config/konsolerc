@@ -1,0 +1,13 @@
+MenuBar=Disabled
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RemoveWindowTitleBarAndFrame=true
+
+[Notification Messages]
+CloseAllTabs=true
+
+[UiSettings]
+ColorScheme=
