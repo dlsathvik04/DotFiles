@@ -1,5 +1,5 @@
 [Activities][LastVirtualDesktop]
-17c265f6-74b9-4b01-b9c4-7aff6167b74b=e9bfbc62-e242-418e-8452-6110e23de6d1
+17c265f6-74b9-4b01-b9c4-7aff6167b74b=7c425fd6-45fd-48ec-85e7-d2e8b5538680
 
 [Desktops]
 Id_1=7c425fd6-45fd-48ec-85e7-d2e8b5538680
@@ -9,6 +9,9 @@ Id_4=ee3124d6-e1cb-4ee1-a475-515e121ae74b
 Id_5=691abf22-7b2a-40fe-a711-d8bf74d3d6ba
 Number=5
 Rows=1
+
+[Effect-overview]
+BorderActivate=9
 
 [Plugins]
 krohnkiteEnabled=true
@@ -23,7 +26,13 @@ tileLayoutGap=2
 [Tiling]
 padding=4
 
+[Tiling][095282c3-7852-5222-abcd-d0b79c55c1be]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][b1cc2c36-0f0a-5126-ab66-15716a2f5c0f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][c01f8edb-d35b-59e4-b198-a01087079613]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Xwayland]

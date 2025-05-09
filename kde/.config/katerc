@@ -10,7 +10,9 @@ Show Tab Bar=true
 Show Url Nav Bar=true
 
 [MainWindow]
-2048x1280 screen: Height=598
+1920x1080 screen: Height=1047
+1920x1080 screen: Width=955
+2048x1280 screen: Height=608
 2048x1280 screen: Width=1019
 
 [filetree]
@@ -28,7 +30,7 @@ viewShade=81,49,95
 AllowedServerCommandLines=
 AutoHover=true
 AutoImport=true
-BlockedServerCommandLines=/home/dlsathvik04/.local/share/nvim/mason/bin/lua-language-server
+BlockedServerCommandLines=/home/dlsathvik04/.local/share/nvim/mason/bin/lua-language-server,/home/dlsathvik04/.local/share/nvim/mason/bin/marksman server
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true
